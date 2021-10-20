@@ -1,0 +1,588 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Simonetta", cursive;
+  color: white;
+}
+/* ----------------SECCION HEADER */
+/* MENU SUPERIOR */
+.header-encabezadoSuperior {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.buscador-provisorio {
+  display: flex;
+  justify-content: flex-end;
+  order: -1;
+  padding-top: 5vh;
+  list-style: none;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.header__menuSuperior--lista {
+  list-style: none;
+  padding-top: 5vh;
+  display: flex;
+  align-items: baseline;
+}
+.header__menuSuperior--lista a {
+  color: black;
+}
+/* NO SE SI ENTRA COMO TRANSICION. */
+.header__menuSuperior--lista a:hover {
+  color: #edb9b9;
+}
+/* BANNER */
+
+.header-encabezadoBanner img {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100vh;
+  background-color: white;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* MENU PRINCIPAL */
+.header-encabezadoPrincipal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.header__navegadorPrincipal--lista {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header__navegadorPrincipal--lista a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  list-style: none;
+  padding: 5px 20px 5px 20px;
+  background-color: #edb9b9;
+  border-radius: 20px;
+  margin: 10px;
+  line-height: 2;
+}
+/* NO SE SI ENTRA COMO TRANSICION. */
+.header__navegadorPrincipal--lista a:hover {
+  background-color: black;
+  color: #edb9b9;
+}
+
+/*---------------------SECCION MAIN  */
+
+/* TITULO PRINCIIPAL */
+
+.main__tituloPrincipal {
+  display: flex;
+  flex-direction: row;
+
+  text-decoration: none;
+  list-style: none;
+}
+.main__tituloPrincipal--titulo {
+  display: flex;
+  color: black;
+  font-size: 30px;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  /* DESAFIO ANIMACIONES */
+  animation-name: tituloPrincipal;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes tituloPrincipal {
+  0% {
+    color: #f0e889;
+  }
+  50% {
+    color: #edb9b9;
+  }
+  100% {
+    color: #ff8cb7;
+  }
+}
+
+/* ----------------SECTION*/
+.main__seccionPrincipal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.main__seccionPrincipal--parrafo p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  text-align: left;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 3rem;
+  width: 100vh;
+  font-style: italic;
+}
+
+.main__imagenDeslizable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main__imagenDeslizable img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+/* NO SE SI ENTRA DENTRO DE TRANSICIONES EL CAMBIO DE OPACIDAD */
+.main__imagenDeslizable img:hover {
+  filter: opacity(0.5);
+}
+
+/*------------------------- SECTION PRODUCTOS */
+
+.section__productos {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* TITULO NOVEDADES */
+.section__productosNovedades {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: black solid 1px;
+  margin-top: 300px;
+}
+
+/* SECTION NOVEDADES */
+.novedades-productos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(240, 232, 137, 0.26);
+  font-style: italic;
+}
+.novedades-productos img {
+  width: 70%;
+  align-content: space-around;
+  border-radius: 70%;
+ /* TRANSICIONES */
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.novedades-productos img:hover {
+  filter: opacity(0.5);
+}
+
+.novedades1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ef3b8a;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.novedades1 h4 {
+  margin-top: 20px;
+}
+
+.novedades2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ef3b8a;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.novedades2 h4 {
+  margin-top: 20px;
+}
+
+.novedades3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ef3b8a;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.novedades3 h4 {
+  margin-top: 20px;
+}
+
+.novedades4 {
+  display: flex;
+  flex-direction: column;
+  color: #ef3b8a;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.novedades4 h4 {
+  margin-top: 20px;
+}
+
+.novedades5 {
+  display: flex;
+  flex-direction: column;
+  color: #ef3b8a;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.novedades5 h4 {
+  margin-top: 20px;
+}
+
+/* ---------SECTION CON BANNER DE MARCAS QUE SE VENDEN */
+
+/* DESAFIO GRADIENTES */
+.marcas__imagen {
+  display: flex;
+  background-image: linear-gradient(to top, #ff8cb7 0%, #ffd1ff 100%),
+    url(./imagenes/marcasProvisorio.png);
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 50vh;
+  margin-top: 200px;
+}
+.marcas__imagen h2 {
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+/* ------------------------SECCION FOOTER */
+
+/* FOOTER MENU DERECHO*/
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.footer__menuIzquierdo--lista {
+  list-style: none;
+}
+.footer__menuIzquierdo--lista a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+}
+/* BANNER FOOTER */
+.footer__banner {
+  display: flex;
+  flex-direction: row;
+  align-items: column;
+}
+.footer__banner img {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  width: 400px;
+}
+/* MEDIOS PAGO Y REDES */
+.footer-iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__mediosPago {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 4rem;
+}
+
+.footer__mediosPago--icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  line-height: 5rem;
+}
+.footer__mediosPago--icono i {
+  font-size: 50px;
+  letter-spacing: 1rem;
+}
+.footer__redesSociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  line-height: 10rem;
+}
+.footer__redesSociales--icono i {
+  font-size: 50px;
+  letter-spacing: 1rem;
+}
+/* COPYRIGHT */
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+.footer__copyright--texto {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* -------------------------SKIN CARE HTML */
+/* DESAFIO GRID!!!  */
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav galeria"
+    "nav galeria"
+    "nav galeria";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 500px;
+  grid-column-gap: 2px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.titulo-skinCare {
+  grid-area: nav;
+  background-color: white;
+  color: black;
+}
+
+.titulo-skinCare h1,
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  color: black;
+  font-size: 30px;
+  line-height: 3;
+  margin-left: 30px;
+	/* DESAFIO TRANSICIONES */
+  text-shadow: 2px 2px 2px rgb(158, 158, 163);
+}
+.titulo-skinCare h1 {
+  background-color: #edb9b9;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  margin-right: 30%;
+}
+.navegador__skinCare ul,
+a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 25px;
+  line-height: 3;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+/* NO SE SI ENTRA COMO TRANSICION */
+.navegador__skinCare a:hover {
+  color: #edb9b9;
+}
+.galeria {
+  grid-area: galeria;
+  display: grid;
+  background-color: rgba(240, 232, 137, 0.26);
+  font-style: italic;
+}
+.galeriaFotos {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  align-content: space-evenly;
+  justify-content: center;
+  grid-column-gap: 17%;
+  color: black;
+	/* DESAFIO TRANSICIONES */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.galeriaFotos img {
+  width: 200px;
+  justify-self: center;
+  mix-blend-mode: darken;
+	/* DESAFIO TRANSICIONES */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.galeria__fotosZoom {
+  overflow: hidden;
+}
+/* DESAFIO TRNSFORMACIONES */
+.galeria__fotosZoom:hover {
+	/* DESAFIO TRANSFORMACIONES */
+  transform: scale(1.2);
+}
+
+/* ------------------SECCION ENVIO INTERNACIONAL */
+.envio-internacional {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.titulo-envio h1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  margin-top: 10%;
+}
+
+.envio-texto {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.envio-texto p {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.envio-tabla {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transform: scale(1.2);
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+  height: 45vh;
+  width: 50vw;
+  background-color: #fcefee;
+  border: 2px solid #edb9b9;
+  border-radius: 20px;
+}
+.envio-tabla table {
+  background-color: rgba(240, 232, 137, 0.26);
+  font-style: italic;
+  color: #ef3b8a;
+  border: solid white 3px;
+	/* DESAFIO TRANSICIONES */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* --------------------SECCION CONTACTO */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.titulo-contacto {
+  color: black;
+  font-size: 25px;
+  margin-top: 10%;
+}
+.texto-contacto {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transform: scale(1.2);
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+  height: 45vh;
+  width: 50vw;
+  background-color: #fcefee;
+  border: 2px solid #edb9b9;
+  border-radius: 20px;
+}
+.formulario-estilos {
+  background-color: rgba(240, 232, 137, 0.26);
+  font-style: italic;
+  color: #ef3b8a;
+  border: solid white 3px;
+	/* DESAFIO TRANSICIONES */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ------------------LOGIN-------- */
+.formulario-login{
+	display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+	
+}
+.formulario__login--login{
+	display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transform: scale(1.2);
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+  height: 30vh;
+  width: 50vw;
+  background-color: #fcefee;
+  border: 2px solid #edb9b9;
+  border-radius: 20px;
+}
+
+.formulario-login fieldset{
+	background-color: rgba(240, 232, 137, 0.26);
+  font-style: italic;
+  color: #ef3b8a;
+  border: solid white 3px;
+	/* DESAFIO TRANSICIONES */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	
+}
+/* SECCION SOBRE NOSOTROS */
+/* SECCION BEAUTY TOOLS */
+/* SALE */
+/* CONSEJOS */
