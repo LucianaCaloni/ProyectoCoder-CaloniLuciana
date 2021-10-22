@@ -185,7 +185,7 @@ body {
   width: 70%;
   align-content: space-around;
   border-radius: 70%;
- /* TRANSICIONES */
+  /* TRANSICIONES */
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 .novedades-productos img:hover {
@@ -390,7 +390,7 @@ h2 {
   font-size: 30px;
   line-height: 3;
   margin-left: 30px;
-	/* DESAFIO TRANSICIONES */
+  /* DESAFIO TRANSICIONES */
   text-shadow: 2px 2px 2px rgb(158, 158, 163);
 }
 .titulo-skinCare h1 {
@@ -428,14 +428,14 @@ a {
   justify-content: center;
   grid-column-gap: 17%;
   color: black;
-	/* DESAFIO TRANSICIONES */
+  /* DESAFIO TRANSICIONES */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .galeriaFotos img {
   width: 200px;
   justify-self: center;
   mix-blend-mode: darken;
-	/* DESAFIO TRANSICIONES */
+  /* DESAFIO TRANSICIONES */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .galeria__fotosZoom {
@@ -443,7 +443,7 @@ a {
 }
 /* DESAFIO TRNSFORMACIONES */
 .galeria__fotosZoom:hover {
-	/* DESAFIO TRANSFORMACIONES */
+  /* DESAFIO TRANSFORMACIONES */
   transform: scale(1.2);
 }
 
@@ -501,7 +501,7 @@ a {
   font-style: italic;
   color: #ef3b8a;
   border: solid white 3px;
-	/* DESAFIO TRANSICIONES */
+  /* DESAFIO TRANSICIONES */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -546,20 +546,19 @@ a {
   font-style: italic;
   color: #ef3b8a;
   border: solid white 3px;
-	/* DESAFIO TRANSICIONES */
+  /* DESAFIO TRANSICIONES */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* ------------------LOGIN-------- */
-.formulario-login{
-	display: flex;
+.formulario-login {
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-	
 }
-.formulario__login--login{
-	display: flex;
+.formulario__login--login {
+  display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   transform: scale(1.2);
@@ -574,15 +573,154 @@ a {
   border-radius: 20px;
 }
 
-.formulario-login fieldset{
-	background-color: rgba(240, 232, 137, 0.26);
+.formulario-login fieldset {
+  background-color: rgba(240, 232, 137, 0.26);
   font-style: italic;
   color: #ef3b8a;
   border: solid white 3px;
-	/* DESAFIO TRANSICIONES */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	
+  /* DESAFIO TRANSICIONES */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+/* -----------------------------CONSEJOS */
+/* CONSEJOS TIPO DE PIEL */
+.consejos-titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 100px;
+}
+.consejos-titulos h1 {
+  font-size: 30px;
+  text-shadow: 2px 2px rgb(158 158 163);
+}
+.consejos-titulos h2 {
+  font-size: 25px;
+  text-shadow: none;
+  color: #edb9b9;
+  margin-top: 200px;
+  border-top: solid 1px black;
+}
+.consejos-titulos p {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.tipo-piel {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 700px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  background-color: #fcefee;
+  border-radius: 50px;
+}
+
+.tipo-piel__pielGrasa {
+  display: flex;
+  color: #ef3b8a;
+  font-size: 20px;
+  font-style: italic;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.tipo-piel__pielGrasa img {
+  width: 500px;
+  height: 312.92px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tipo-piel__pielGrasa img:hover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+  
+
+}
+.tipo-piel__pielMixta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #ef3b8a;
+  font-size: 20px;
+  font-style: italic;
+}
+/* PROBANDO UN TRANSFORM QUE VI EB UN TEXTO EN UNA PAGINA */
+/* .tipo-piel__pielMixta:hover p{
+  transform: translateY(-35px);
+  
+} */
+.tipo-piel__pielMixta img {
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tipo-piel__pielMixta img:hover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+  
+
+}
+.tipo-piel__pielSeca {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #ef3b8a;
+  font-size: 20px;
+  font-style: italic;
+}
+.tipo-piel__pielSeca img {
+  width: 500px;
+  height: 312.92px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tipo-piel__pielSeca img:hover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+  
+
+}
+
+
+.rutina-skinCare__titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 100px;
+}
+.rutina-skinCare__titulo img {
+  width: 600px;
+  
+}
+.rutina-consejos{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 700px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  background-color: #fcefee;
+  border-radius: 50px;
+}
+.rutina-consejos__dia{
+  background-color: #f0e88952;
+  ;
+}
+.rutina-consejos__noche{
+  background-color: #8190ed7d;
+}
+
 /* SECCION SOBRE NOSOTROS */
 /* SECCION BEAUTY TOOLS */
 /* SALE */
-/* CONSEJOS */
