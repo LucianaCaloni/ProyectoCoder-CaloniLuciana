@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura's Beauty</title>
-    <link rel="stylesheet" href="estilos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap"
@@ -14,73 +14,154 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 
 <body>
     <header>
-        <div class="header-encabezadoSuperior">
-            <nav class="header__menuSuperior">
-                <ul class="header__menuSuperior--lista">
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="#"> <i class="far fa-heart"></i></a></li>
-                </ul>
-            </nav>
-            <span class="buscador-provisorio">
-                <input type="search" name="buscador" placeholder="Buscar" class="buscadorProvisorio">
-            </span>
+        <div class="container">
+            <div class="header-encabezadoSuperior">
+                <nav class="header__menuSuperior">
+                    <ul class="header__menuSuperior--lista">
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"> <i class="far fa-heart"></i></a></li>
+                    </ul>
+                </nav>
+                <span class="buscador-provisorio">
+                    <input type="search" name="buscador" placeholder="Buscar" class="buscadorProvisorio">
+                </span>
+            </div>
+
+        </div>
         </div>
 
-        <div class="header-encabezadoBanner">
-            <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" alt="bannerSuperior"> </a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header-encabezadoBanner">
+                    <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" class="image-fluid"
+                            alt="bannerSuperior"> </a>
+                </div>
+            </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="header-encabezadoPrincipal">
 
-        <div class="header-encabezadoPrincipal">
+                    <nav class="header__navegadorPrincipal">
+                        <ul class="header__navegadorPrincipal--lista">
+                            <li><a href="index.html" class="navegadorPrincipal__lista--color">Home</a></li>
+                            <li><a href="skincare.html" class="navegadorPrincipal__lista--color">Skin Care</a></li>
+                            <li><a href="maquillaje.html" class="navegadorPrincipal__lista--color">Maquillaje</a></li>
+                            <li><a href="beautytools.html" class="navegadorPrincipal__lista--color">Beauty Tools</a>
+                            </li>
+                            <li><a href="consejos.html" class="navegadorPrincipal__lista--color">Consejos</a></li>
+                            <li><a href="sale.html" class="navegadorPrincipal__lista--color">Sale</a></li>
 
-            <nav class="header__navegadorPrincipal">
-                <ul class="header__navegadorPrincipal--lista">
-                    <li><a href="index.html" class="navegadorPrincipal__lista--color">Home</a></li>
-                    <li><a href="skincare.html" class="navegadorPrincipal__lista--color">Skin Care</a></li>
-                    <li><a href="maquillaje.html" class="navegadorPrincipal__lista--color">Maquillaje</a></li>
-                    <li><a href="beautytools.html" class="navegadorPrincipal__lista--color">Beauty Tools</a></li>
-                    <li><a href="consejos.html" class="navegadorPrincipal__lista--color">Consejos</a></li>
-                    <li><a href="sale.html" class="navegadorPrincipal__lista--color">Sale</a></li>
-
-                </ul>
-            </nav>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-
-    </main>
-    <footer>
-        <div class="footer-items">
-            <div class="footer__menuIzquierdo">
-                <ul class="footer__menuIzquierdo--lista">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a href="enviointernacional.html">Envio internacional</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                </ul>
-            </div>
-            <div class="footer__banner"><img src="./imagenes/bannerflorfootermaschico.png" alt="bannerFooter"></div>
-
-            <div class="footer-iconos">
-                <h4 class="footer__mediosPago">Medios de pago</h4>
-                <div class="footer__mediosPago--icono"><i class="fab fa-paypal"><i class="fab fa-cc-mastercard"></i><i
-                            class="fab fa-cc-visa"></i><i class="fab fa-cc-amex"></i></i></div>
-                <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
-                <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
-                        class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i></div>
-
+        <div class="container">
+            <div class="ofertas-texto">
+                <h1>
+                    Aprovecha estas ofertas que tenemos para vos!!!
+                </h1>
+                <h2>
+                    No te pierdas nuestras ofertas limitadas,20% OFF!!!
+                </h2>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p class="footer__copyright--texto">Copyright</p>
+        <!-- probando cards -->
+        <div class="container-">
+
+            <div class="sale">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/probando cards/1.gif" card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Aqui iria el precio.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/probando cards/2.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Aqui iria el precio.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/probando cards/spec_800_00100134514254991848_main_l.gif" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Aqui iria el precio..</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/probando cards/lululum.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Aqui iria el precio.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/probando cards/rohto.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Aqui iria el precio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer-items">
+            <div class="container">
+                <div class="row row-cols-4">
+                    <div class="footer__menuIzquierdo">
+                        <ul class="footer__menuIzquierdo--lista">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                            <li><a href="enviointernacional.html">Envio internacional</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="footer__banner"><img src="./imagenes/bannerflorfootermaschico.png"
+                                    alt="bannerFooter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div row row-cols-4>
+
+                            <div class="footer-iconos">
+                                <h4 class="footer__mediosPago">Medios de pago</h4>
+                                <div class="footer__mediosPago--icono"><i class="fab fa-paypal"><i
+                                            class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
+                                            class="fab fa-cc-amex"></i></i></div>
+                                <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
+                                <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
+                                        class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer__copyright--texto">Copyright</p>
+                </div>
+            </div>
         </div>
 
 
@@ -88,11 +169,16 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 <script src="https://kit.fontawesome.com/2352381842.js" crossorigin="anonymous"></script>
 

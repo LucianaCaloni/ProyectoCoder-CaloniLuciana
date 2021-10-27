@@ -724,3 +724,36 @@ a {
 /* SECCION SOBRE NOSOTROS */
 /* SECCION BEAUTY TOOLS */
 /* SALE */
+/* probando cards */
+.sale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4rem;
+  color: black;
+  margin-top: 3rem;
+  background-color:rgba(240, 232, 137, 0.26);
+  margin-bottom: 200px;
+}
+.card{
+  background-color: #ffd1ff;
+}
+.card:hover{
+  transform: scale(1.2);
+}
+.sale p:hover{
+  color: #ef3b8a;
+}
+.ofertas-texto{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ef3b8a;
+  font-size: 20px;
+  margin-top: 200px;
+  text-shadow: none;
+}
+.ofertas-texto h2{
+  text-shadow: none;
+}
