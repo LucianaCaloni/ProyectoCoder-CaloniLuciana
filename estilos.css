@@ -11,7 +11,7 @@ body {
 }
 /* ----------------SECCION HEADER */
 /* MENU SUPERIOR */
-.header-encabezadoSuperior {
+#header-encabezadoSuperior {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -19,7 +19,7 @@ body {
 .buscador-provisorio {
   display: flex;
   justify-content: flex-end;
-  order: -1;
+  /* order: -1; */
   padding-top: 5vh;
   list-style: none;
   flex-flow: row nowrap;
@@ -411,7 +411,7 @@ a {
   align-items: flex-start;
   margin-left: 30px;
 }
-/* NO SE SI ENTRA COMO TRANSICION */
+
 .navegador__skinCare a:hover {
   color: #edb9b9;
 }
@@ -441,9 +441,9 @@ a {
 .galeria__fotosZoom {
   overflow: hidden;
 }
-/* DESAFIO TRNSFORMACIONES */
+
 .galeria__fotosZoom:hover {
-  /* DESAFIO TRANSFORMACIONES */
+ 
   transform: scale(1.2);
 }
 
@@ -638,7 +638,7 @@ a {
 .tipo-piel__pielGrasa img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-  
+
 
 }
 .tipo-piel__pielMixta {
@@ -654,7 +654,7 @@ a {
 /* PROBANDO UN TRANSFORM QUE VI EB UN TEXTO EN UNA PAGINA */
 /* .tipo-piel__pielMixta:hover p{
   transform: translateY(-35px);
-  
+
 } */
 .tipo-piel__pielMixta img {
   width: 500px;
@@ -664,7 +664,7 @@ a {
 .tipo-piel__pielMixta img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-  
+
 
 }
 .tipo-piel__pielSeca {
@@ -686,7 +686,7 @@ a {
 .tipo-piel__pielSeca img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-  
+
 
 }
 
@@ -701,7 +701,7 @@ a {
 }
 .rutina-skinCare__titulo img {
   width: 600px;
-  
+
 }
 .rutina-consejos{
   display: grid;
@@ -724,8 +724,8 @@ a {
 /* SECCION SOBRE NOSOTROS */
 /* SECCION BEAUTY TOOLS */
 /* SALE */
-/* probando cards */
-.sale {
+/* DESAFIO BOOSTRAPS Y RESPONSIVE EN EL HTML DE SALE*/
+#sale {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -735,25 +735,49 @@ a {
   background-color:rgba(240, 232, 137, 0.26);
   margin-bottom: 200px;
 }
+.card-group{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
 .card{
-  background-color: #ffd1ff;
+  background-color: rgba(240, 232, 137, 0.26);
+  align-items: center;
+  border-radius: 2rem;
+  
+  
 }
-.card:hover{
+.card img{
+  width: 40%;
+ 
+  
+}
+.card  img:hover{
+  overflow: hidden;
   transform: scale(1.2);
+  
 }
+
 .sale p:hover{
   color: #ef3b8a;
 }
 .ofertas-texto{
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ef3b8a;
-  font-size: 20px;
-  margin-top: 200px;
+  font-size: 1.5rem;
+  margin-top: 50px;
   text-shadow: none;
+  margin-bottom: 200px;
 }
-.ofertas-texto h2{
-  text-shadow: none;
+.card-text{
+  color: #ef3b8a;
 }
+
+/* COLOR AL PASAR MOUSE POR ICONOS FOOTER */
+.list-unstyled a:hover{
+  color: #EDB9B9;
+  
+  }
+

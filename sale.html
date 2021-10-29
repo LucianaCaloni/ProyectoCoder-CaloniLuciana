@@ -21,151 +21,308 @@
 </head>
 
 <body>
+
+
     <header>
-        <div class="container">
-            <div class="header-encabezadoSuperior">
-                <nav class="header__menuSuperior">
-                    <ul class="header__menuSuperior--lista">
-                        <li><a href="#"><i class="fas fa-search"></i></a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                        <li><a href="#"> <i class="far fa-heart"></i></a></li>
-                    </ul>
-                </nav>
-                <span class="buscador-provisorio">
-                    <input type="search" name="buscador" placeholder="Buscar" class="buscadorProvisorio">
-                </span>
-            </div>
-
-        </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="header-encabezadoBanner">
-                    <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" class="image-fluid"
-                            alt="bannerSuperior"> </a>
-                </div>
-            </div>
-        </div>
+        <!-- NAVEGADOR SUPERIOR -->
         <div class="container">
             <div class="row">
-                <div class="header-encabezadoPrincipal">
+                <div class="col-sm-12 col-md-12 col-xl-12" id="header-encabezadoSuperior">
+                    <!-- <div class="header-encabezadoSuperior"> -->
 
-                    <nav class="header__navegadorPrincipal">
-                        <ul class="header__navegadorPrincipal--lista">
-                            <li><a href="index.html" class="navegadorPrincipal__lista--color">Home</a></li>
-                            <li><a href="skincare.html" class="navegadorPrincipal__lista--color">Skin Care</a></li>
-                            <li><a href="maquillaje.html" class="navegadorPrincipal__lista--color">Maquillaje</a></li>
-                            <li><a href="beautytools.html" class="navegadorPrincipal__lista--color">Beauty Tools</a>
-                            </li>
-                            <li><a href="consejos.html" class="navegadorPrincipal__lista--color">Consejos</a></li>
-                            <li><a href="sale.html" class="navegadorPrincipal__lista--color">Sale</a></li>
-
+                    <nav class="header__menuSuperior">
+                        <ul class="header__menuSuperior--lista">
+                            <input type="search" name="buscador" placeholder="Buscar"
+                                class="buscadorProvisorio d-none d-lg-block ">
+                            <li><a href="#"><i class="fas fa-search d-none d-lg-block "></i></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"> <i class="far fa-heart"></i></a></li>
                         </ul>
                     </nav>
+
                 </div>
             </div>
+        </div>
+
+        <!-- BANNER LOGO -->
+        <div>
+            <img src="./imagenes/bannerflormaschico.gif" class="img-fluid" alt="Banner logo">
+        </div>
+
+        <!-- <div class="container">
+            <div class="row">
+
+                <div class="header-encabezadoBanner">
+                    <div class="col-md-12 col-md-12 col-xl-12"></div>
+                    <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" alt="bannerSuperior"> </a>
+                </div>
+            </div>
+        </div>
+        </div> -->
+        <!-- NAVEGADOR PRINCIPAL -->
+        <!-- MOMENTANEAMENTE DE PRUEBA Y PARA DESAFIO RETIRO NAV PRINCIPAL MANUAL -->
+        <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-none d-lg-block ">
+                    <div class="header-encabezadoPrincipal">
+
+                        <nav class="header__navegadorPrincipal">
+                            <ul class="header__navegadorPrincipal--lista">
+                                <li><a href="index.html" class="navegadorPrincipal__lista--color">Home</a></li>
+                                <li><a href="skincare.html" class="navegadorPrincipal__lista--color">Skin Care</a>
+                                </li>
+                                <li><a href="maquillaje.html" class="navegadorPrincipal__lista--color">Maquillaje</a>
+                                </li>
+                                <li><a href="beautytools.html" class="navegadorPrincipal__lista--color">Beauty
+                                        Tools</a>
+                                </li>
+                                <li><a href="consejos.html" class="navegadorPrincipal__lista--color">Consejos</a>
+                                </li>
+                                <li><a href="sale.html" class="navegadorPrincipal__lista--color">Sale</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- NAV DE BOOSTRAP -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center" id="navPrincipal">
+            <a class="btn btn-danger" href="index.html" role="button">Home</a>
+            <a class="btn btn-danger" href="skincare.html" role="button">Skin Care</a>
+            <a class="btn btn-danger" href="maquillaje.html" role="button">Maquillaje</a>
+            <a class="btn btn-danger" href="beautytools.html" role="button">Beauty tools</a>
+            <a class="btn btn-danger" href="consejos.html" role="button">Consejos</a>
+            <a class="btn btn-danger" href="sale.html" role="button">Sale</a>
+
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="ofertas-texto">
-                <h1>
-                    Aprovecha estas ofertas que tenemos para vos!!!
-                </h1>
-                <h2>
-                    No te pierdas nuestras ofertas limitadas,20% OFF!!!
-                </h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center">
+                    <div class="ofertas-texto">
+                        <div class="col-sm-12 col-md-12">
+                            <h1 class="fs-3">
+                                Aprovechá estas ofertas que tenemos para vos!!!. No te pierdas nuestras ofertas
+                                limitadas,20% OFF!!!
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- probando cards -->
-        <div class="container-">
 
-            <div class="sale">
 
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/probando cards/1.gif" card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aqui iria el precio.</p>
-                    </div>
+        </div>
+        </div>
+        <!-- probando card2 -->
+        <div class="card-group">
+            <div class="card m-2">
+                <img src="./imagenes/probando cards/1.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">G9Skin. White Whipping Cream.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/probando cards/2.gif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aqui iria el precio.</p>
-                    </div>
+            </div>
+            <div class="card m-2">
+                <img src="./imagenes/probando cards/2.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Shiseido Treatment Softener Lotion Normal And Combination To Oily Skin.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/probando cards/spec_800_00100134514254991848_main_l.gif" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aqui iria el precio..</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/probando cards/lululum.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aqui iria el precio.</p>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/probando cards/rohto.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Aqui iria el precio.</p>
-                    </div>
+            </div>
+            <div class="card m-2">
+                <img src="./imagenes/probando cards/INNISFREECARD.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">INNISFREE. No-sebum mineral powder</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
         </div>
+        <div class="card-group align-items-center">
+            <div class="card m2">
+                <img src="./imagenes/g9sun.gif" class="card-img-top rounded" alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">G9Skin. White In Milk Sun.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card m-2">
+                <img src="./imagenes/probando cards/INNISFREECARD2.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Sale</h5> -->
+                    <p class="card-text">INNISFREE. Jeju orchid eye cream.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card m-2">
+                <img src="./imagenes/probando cards/spec_800_00100134514254991848_main_l.gif" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Shiseido. SincroSkin self refreshing. </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
 
-        <div class="footer-items">
-            <div class="container">
-                <div class="row row-cols-4">
-                    <div class="footer__menuIzquierdo">
-                        <ul class="footer__menuIzquierdo--lista">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                            <li><a href="enviointernacional.html">Envio internacional</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                            <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
-                        </ul>
+    <!-- FOOOTERRRRRR PARA DESAFIO DE BOOTSTRAPS -->
+    <footer class="text-center text-lg-start bg-dark border border-white mt-xl-5 pt-4 text-white">
+
+        <div class="container p-4">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+
+                    <ul class="list-unstyled mb-4">
+                        <li>
+                            <a href="#!" class="text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Sobre nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Envio internacional</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class=" mb-4">Suscribite a nuestro newsletter</h5>
+
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email address</label>
                     </div>
+
+                    <button type="submit" class="btn btn-outline-light btn-block">Suscribite</button>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Medios de pago</h5>
+
+
+                    <ul class="list-unstyled">
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-paypal"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-cc-mastercard"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-cc-visa"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-cc-amex"></i></a>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+
+                    <h5 class="text-uppercase mb-4">Nuestras redes sociales</h5>
+
+
+                    <ul class="list-unstyled">
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter-square"></i></a>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3 border-top border-white">
+                © 2021 Copyright:
+                <p>Luciana Caloni</p>
+            </div>
+            <!-- Copyright -->
+    </footer>
+    <!-------------------------------- FOOTER CON CSS -->
+    <!-- <footer>
+
+                <div class="footer-items">
                     <div class="container">
-                        <div class="row row-cols-4">
-                            <div class="footer__banner"><img src="./imagenes/bannerflorfootermaschico.png"
-                                    alt="bannerFooter">
+                        <div class="row">
+                            <!-- AGREGAR ROW A CADA DIV Y VER SI LAS CLASES LAS PONGO EN ID -->
+    <!-- <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 id=" footer__menuIzquierdo">
+                                <div class="footer__menuIzquierdo">
+                                    <ul class="footer__menuIzquierdo--lista">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                                        <li><a href="enviointernacional.html">Envio internacional</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                                        <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div row row-cols-4>
+                    </div> -->
 
-                            <div class="footer-iconos">
-                                <h4 class="footer__mediosPago">Medios de pago</h4>
-                                <div class="footer__mediosPago--icono"><i class="fab fa-paypal"><i
-                                            class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
-                                            class="fab fa-cc-amex"></i></i></div>
-                                <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
-                                <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
-                                        class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i></div>
-
-                            </div>
-                        </div>
+    <!-- <div class="row">
+                <div class="d-none d-lg-block col-lg-4 col-xl-4">
+                    <div class="footer__banner"><img src="./imagenes/bannerflorfootermaschico.png" alt="bannerFooter">
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <p class="footer__copyright--texto">Copyright</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                    <div class="footer-iconos">
+                        <h4 class="footer__mediosPago">Medios de pago</h4>
+                        <div class="footer__mediosPago--icono"><i class="fab fa-paypal"><i
+                                    class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
+                                    class="fab fa-cc-amex"></i></i></div>
+                        <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
+                        <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
+                                class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="footer__copyright--texto">Copyright</p>
+        </div>
+        </div>
+        </div> -->
 
 
     </footer>
+    </div>
+
+
 
 
 
