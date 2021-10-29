@@ -780,4 +780,8 @@ a {
   color: #EDB9B9;
   
   }
-
+.pagination{
+  display: flex;
+  justify-content: center;
+ 
+}
