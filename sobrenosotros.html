@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura's Beauty</title>
-    <link rel="stylesheet" href="./CSS/estilos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap"
@@ -14,28 +14,42 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+
 
 </head>
 
 <body>
     <header>
-        <div class="header-encabezadoSuperior">
-            <nav class="header__menuSuperior">
-                <ul class="header__menuSuperior--lista">
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="#"> <i class="far fa-heart"></i></a></li>
-                </ul>
-            </nav>
-            <span class="buscador-provisorio">
-                <input type="search" name="buscador" placeholder="Buscar" class="buscadorProvisorio">
-            </span>
+        <!-- NAVEGADOR SUPERIOR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-12" id="header-encabezadoSuperior">
+                    <!-- <div class="header-encabezadoSuperior"> -->
+                    <!-- APLICANDO UN POCO DE BOOTSTRAP AL BUSCADOR -->
+
+                    <nav class="header__menuSuperior">
+                        <ul class="header__menuSuperior--lista">
+                            <input type="search" name="buscador" placeholder="Buscar"
+                                class="buscadorProvisorio d-none d-lg-block ">
+                            <li><a href="#"><i class="fas fa-search d-none d-lg-block "></i></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"> <i class="far fa-heart"></i></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
         </div>
 
-        <div class="header-encabezadoBanner">
-            <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" alt="bannerSuperior"> </a>
+        <!-- BANNER LOGO CON IMAGE FLUID BOOTSTRAP-->
+        <div>
+            <img src="./imagenes/bannerflormaschico.gif" class="img-fluid" alt="Banner logo">
         </div>
 
         <div class="header-encabezadoPrincipal">
@@ -54,6 +68,39 @@
         </div>
     </header>
     <main>
+        <div class="seccion__nosotros">
+            <h1 class="seccion__nosotros--titulo">
+                Quiénes somos?
+            </h1>
+            <div data-aos="fade-up" class="seccion__nosotros--info1">
+
+                <p>Todo comenzó en el 2019 cuando entre un grupo de amigas decidimos llevar a cabo el proyecto de traer
+                    los mejores productos cosméticos Asiáticos
+                    a Latinoamérica. Somos apasionadas de la cosmetica asiática y sabemos los
+                    difícil que es poder conseguirlos. Por eso queremos que consigas de la manera mas rápida y sin
+                    necesidad
+                    de lidiar con problemas externos. </p>
+                <img data-aos="zoom-in" src="./imagenes/nosotros/nosotros1.gif" alt=""
+                    class="seccion__nosotros--imagen">
+            </div>
+
+
+            <div data-aos="fade-up" class="seccion__nosotros--info2">
+
+                <p> Trabajamos directamente con las marcas para poder ofrecerte calidad y precio. Asegurarnos que lo que
+                    te ofrecemos es de buena calidad es nuestra mayor prioridad. Todo se envía directamente desde el
+                    país de origen sin intermediarios. Podes contactarte con nosotros mediante la seccion Contacto y
+                    sacarte cualquier duda que tengas!
+                </p>
+                <img data-aos="zoom-in" src="./imagenes/nosotros/nosotros2.gif" alt=""
+                    class="seccion__nosotros--imagen">
+
+            </div>
+            <div data-aos="fade-up" class="seccion__nosotros--info3">
+                <p>Poder compartir nuestra pasión con ustedes es lo que mas nos
+                    reconforta y creemos que tiene que ser accesible a todos.</p>
+            </div>
+        </div>
 
     </main>
     <footer>
@@ -88,11 +135,11 @@
 
 
 
-
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 <script src="https://kit.fontawesome.com/2352381842.js" crossorigin="anonymous"></script>
 
