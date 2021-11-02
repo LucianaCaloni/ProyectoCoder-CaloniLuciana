@@ -24,23 +24,32 @@
 
 <body>
     <header>
-        <div class="header-encabezadoSuperior">
-            <nav class="header__menuSuperior">
-                <ul class="header__menuSuperior--lista">
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="#"> <i class="far fa-heart"></i></a></li>
-                </ul>
-            </nav>
-            <span class="buscador-provisorio">
-                <input type="search" name="buscador" placeholder="Buscar" class="buscadorProvisorio">
-            </span>
+        <!-- NAVEGADOR SUPERIOR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-12" id="header-encabezadoSuperior">
+                    <!-- <div class="header-encabezadoSuperior"> -->
+                    <!-- APLICANDO UN POCO DE BOOTSTRAP AL BUSCADOR -->
+
+                    <nav class="header__menuSuperior">
+                        <ul class="header__menuSuperior--lista">
+                            <input type="search" name="buscador" placeholder="Buscar"
+                                class="buscadorProvisorio d-none d-lg-block ">
+                            <li><a href="#"><i class="fas fa-search d-none d-lg-block "></i></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"> <i class="far fa-heart"></i></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
         </div>
 
-        <div class="header-encabezadoBanner">
-            <a href="index.html"> <img src="./imagenes/bannerflormaschico.png" alt="bannerSuperior"> </a>
+        <!-- BANNER LOGO CON IMAGE FLUID BOOTSTRAP-->
+        <div>
+            <img src="./imagenes/bannerflormaschico.gif" class="img-fluid" alt="Banner logo">
         </div>
 
         <div class="header-encabezadoPrincipal">
@@ -141,8 +150,9 @@
 
             <div class="footer-iconos">
                 <h4 class="footer__mediosPago">Medios de pago</h4>
-                <div class="footer__mediosPago--icono"><i class="fab fa-paypal"><i class="fab fa-cc-mastercard"></i><i
-                            class="fab fa-cc-visa"></i><i class="fab fa-cc-amex"></i></i></div>
+                <div class="footer__mediosPago--icono"><i class="fab fa-paypal"></i><i
+                    class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
+                    class="fab fa-cc-amex"></i></i></div>
                 <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
                 <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
                         class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i></div>
