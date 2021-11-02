@@ -1,53 +1,29 @@
 ////////SECCION NOSOTROS//////
 
-
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
-
-  .seccion__nosotros{
-    margin:0rem;
-    width: 100vh;
-  }
-  
-  .seccion__nosotros--info1{
-
-    flex-direction: column;
-    width: 100vh;
-  }
-  .seccion__nosotros--info1 img{
-    width: 100vh;
-  }
-  .seccion__nosotros--info2{
+@media (max-width: 768px) {
+  .seccion__nosotros {
+    margin: 0rem;
     
+  }
+
+  .seccion__nosotros--info1 {
     flex-direction: column;
     width: 100vh;
-
   }
-  .seccion__nosotros--info2 img{
+  .seccion__nosotros--info1 img {
     width: 100vh;
   }
-  .seccion__nosotros--info3 p{
+  .seccion__nosotros--info2 {
+    flex-direction: column;
+    width: 100vh;
+  }
+  .seccion__nosotros--info2 img {
+    width: 100vh;
+  }
+  .seccion__nosotros--info3 p {
     flex-direction: row;
     width: 100vh;
-
   }
-  
+}
 
-  
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {  }
-
-
-
-
+//////////////////////////////////////

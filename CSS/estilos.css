@@ -51,14 +51,15 @@ body {
   padding-bottom: 5px;
 }
 /* MENU PRINCIPAL */
-.header-encabezadoPrincipal {
+* .header-encabezadoPrincipal {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   justify-content: center;
 }
 
 .header__navegadorPrincipal--lista {
   display: flex;
+  flex-direction: row;
   align-items: center;
   list-style: none;
 }
@@ -73,14 +74,25 @@ body {
   margin: 10px;
   line-height: 2;
 }
-/* NO SE SI ENTRA COMO TRANSICION. */
+
 .header__navegadorPrincipal--lista a:hover {
   background-color: black;
   color: #edb9b9;
-  
 }
 
 
+@media (max-width: 768px) {
+  .header__navegadorPrincipal {
+    flex-direction: column;
+  }
+  .header__navegadorPrincipal--lista {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    width:100vh;
+    
+  }
+}
 
 /*---------------------SECCION MAIN  */
 
@@ -263,11 +275,12 @@ body {
 /* DESAFIO GRADIENTES */
 .marcas__imagen {
   display: flex;
+  flex-basis: 100%;
   background-image: linear-gradient(to top, #ff8cb7 0%, #ffd1ff 100%),
-    url(./imagenes/marcasProvisorio.png);
+    url(/imagenes/marcasProvisorio.png);
   background-blend-mode: overlay;
-  width: 100%;
-  height: 50vh;
+
+  height: 100vh;
   margin-top: 200px;
 }
 .marcas__imagen h2 {
@@ -282,7 +295,7 @@ body {
 /* ------------------------SECCION FOOTER */
 
 /* FOOTER MENU DERECHO*/
-.footer-items {
+/* .footer-items {
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -300,7 +313,7 @@ body {
   font-size: 20px;
 }
 /* BANNER FOOTER */
-.footer__banner {
+/* .footer__banner {
   display: flex;
   flex-direction: row;
   align-items: column;
@@ -313,7 +326,7 @@ body {
   width: 400px;
 }
 /* MEDIOS PAGO Y REDES */
-.footer-iconos {
+/* .footer-iconos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,9 +359,9 @@ body {
 .footer__redesSociales--icono i {
   font-size: 50px;
   letter-spacing: 1rem;
-}
+} */
 /* COPYRIGHT */
-.footer-copyright {
+/* .footer-copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -359,7 +372,7 @@ body {
   color: white;
   text-align: center;
   font-size: 20px;
-}
+}  */ */
 
 /* -------------------------SKIN CARE HTML */
 /* DESAFIO GRID!!!  */
@@ -446,7 +459,6 @@ a {
 }
 
 .galeria__fotosZoom:hover {
- 
   transform: scale(1.2);
 }
 
@@ -641,8 +653,6 @@ a {
 .tipo-piel__pielGrasa img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-
-
 }
 .tipo-piel__pielMixta {
   display: flex;
@@ -667,8 +677,6 @@ a {
 .tipo-piel__pielMixta img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-
-
 }
 .tipo-piel__pielSeca {
   display: flex;
@@ -689,12 +697,9 @@ a {
 .tipo-piel__pielSeca img:hover {
   filter: opacity(0.5);
   transform: scale(1.2);
-
-
 }
 
-
-.rutina-skinCare__titulo{
+.rutina-skinCare__titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -704,9 +709,8 @@ a {
 }
 .rutina-skinCare__titulo img {
   width: 600px;
-
 }
-.rutina-consejos{
+.rutina-consejos {
   display: grid;
   justify-content: center;
   grid-template-columns: 600px 600px;
@@ -716,11 +720,10 @@ a {
   background-color: #fcefee;
   border-radius: 50px;
 }
-.rutina-consejos__dia{
+.rutina-consejos__dia {
   background-color: #f0e88952;
-  ;
 }
-.rutina-consejos__noche{
+.rutina-consejos__noche {
   background-color: #8190ed7d;
 }
 
@@ -735,36 +738,29 @@ a {
   padding: 4rem;
   color: black;
   margin-top: 3rem;
-  background-color:rgba(240, 232, 137, 0.26);
+  background-color: rgba(240, 232, 137, 0.26);
   margin-bottom: 200px;
 }
-.card-group{
+.card-group {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
-.card{
+.card {
   background-color: rgba(240, 232, 137, 0.26);
   align-items: center;
   border-radius: 2rem;
-  
-  
 }
-.card img{
+.card img {
   width: 40%;
- 
-  
 }
-.card  img:hover{
+.card img:hover {
   overflow: hidden;
   transform: scale(1.2);
-  
 }
 
-.sale p:hover{
+.sale p:hover {
   color: #ef3b8a;
 }
-.ofertas-texto{
-
+.ofertas-texto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -774,17 +770,15 @@ a {
   text-shadow: none;
   margin-bottom: 200px;
 }
-.card-text{
+.card-text {
   color: #ef3b8a;
 }
 
 /* COLOR AL PASAR MOUSE POR ICONOS FOOTER */
-.list-unstyled a:hover{
-  color: #EDB9B9;
-  
-  }
-.pagination{
+.list-unstyled a:hover {
+  color: #edb9b9;
+}
+.pagination {
   display: flex;
   justify-content: center;
- 
 }

@@ -119,10 +119,9 @@
   font-size: 2rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .seccion__nosotros {
     margin: 0rem;
-    width: 100vh;
   }
   .seccion__nosotros--info1 {
     -webkit-box-orient: vertical;
@@ -150,6 +149,188 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100vh;
+  }
+}
+
+/* FOOTER MENU DERECHO*/
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+}
+
+.footer__menuIzquierdo--lista {
+  list-style: none;
+}
+
+.footer__menuIzquierdo--lista a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+}
+
+.footer__menuIzquierdo--lista a:hover {
+  color: #edb9b9;
+}
+
+/* BANNER FOOTER */
+.footer__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: column;
+      -ms-flex-align: column;
+          align-items: column;
+}
+
+.footer__banner img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  width: 400px;
+}
+
+/* MEDIOS PAGO Y REDES */
+.footer-iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__mediosPago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 30px;
+  line-height: 4rem;
+}
+
+.footer__mediosPago--icono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  line-height: 5rem;
+}
+
+.footer__mediosPago--icono i {
+  font-size: 50px;
+  letter-spacing: 1rem;
+}
+
+.footer__mediosPago--icono i:hover {
+  color: #edb9b9;
+}
+
+.footer__redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  line-height: 10rem;
+}
+
+.footer__redesSociales--icono i {
+  font-size: 50px;
+  letter-spacing: 1rem;
+}
+
+.footer__redesSociales--icono i:hover {
+  color: #edb9b9;
+}
+
+.footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+.footer__copyright--texto {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__menuIzquierdo--lista {
+    padding: 0px;
+  }
+  .footer__menuIzquierdo--lista a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 923px) {
+  .footer__banner img {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
