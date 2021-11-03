@@ -170,103 +170,6 @@ body {
 
 /*------------------------- SECTION PRODUCTOS */
 
-.section__productos {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/* TITULO NOVEDADES */
-.section__productosNovedades {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: black solid 1px;
-  margin-top: 300px;
-}
-
-/* SECTION NOVEDADES */
-.novedades-productos {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: rgba(240, 232, 137, 0.26);
-  font-style: italic;
-}
-.novedades-productos img {
-  width: 70%;
-  align-content: space-around;
-  border-radius: 70%;
-  /* TRANSICIONES */
-  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-}
-.novedades-productos img:hover {
-  filter: opacity(0.5);
-}
-
-.novedades1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ef3b8a;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.novedades1 h4 {
-  margin-top: 20px;
-}
-
-.novedades2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ef3b8a;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.novedades2 h4 {
-  margin-top: 20px;
-}
-
-.novedades3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ef3b8a;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.novedades3 h4 {
-  margin-top: 20px;
-}
-
-.novedades4 {
-  display: flex;
-  flex-direction: column;
-  color: #ef3b8a;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.novedades4 h4 {
-  margin-top: 20px;
-}
-
-.novedades5 {
-  display: flex;
-  flex-direction: column;
-  color: #ef3b8a;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.novedades5 h4 {
-  margin-top: 20px;
-}
 
 /* ---------SECTION CON BANNER DE MARCAS QUE SE VENDEN */
 
@@ -279,7 +182,7 @@ body {
   background-blend-mode: overlay;
 
   height: 100vh;
-  margin-top: 200px;
+  
 }
 .marcas__imagen h2 {
   display: flex;
@@ -289,89 +192,6 @@ body {
   font-size: 40px;
   color: black;
 }
-
-/* ------------------------SECCION FOOTER */
-
-/* FOOTER MENU DERECHO*/
-/* .footer-items {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  justify-content: space-around;
-  padding-top: 40px;
-}
-
-.footer__menuIzquierdo--lista {
-  list-style: none;
-}
-.footer__menuIzquierdo--lista a {
-  text-decoration: none;
-  color: white;
-  list-style: none;
-  font-size: 20px;
-}
-/* BANNER FOOTER */
-/* .footer__banner {
-  display: flex;
-  flex-direction: row;
-  align-items: column;
-}
-.footer__banner img {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  list-style: none;
-  width: 400px;
-}
-/* MEDIOS PAGO Y REDES */
-/* .footer-iconos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__mediosPago {
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  line-height: 4rem;
-}
-
-.footer__mediosPago--icono {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 40px;
-  line-height: 5rem;
-}
-.footer__mediosPago--icono i {
-  font-size: 50px;
-  letter-spacing: 1rem;
-}
-.footer__redesSociales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 30px;
-  line-height: 10rem;
-}
-.footer__redesSociales--icono i {
-  font-size: 50px;
-  letter-spacing: 1rem;
-} */
-/* COPYRIGHT */
-/* .footer-copyright {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: black;
-}
-.footer__copyright--texto {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 20px;
-}  */
-*/
 
 /* -------------------------SKIN CARE HTML */
 /* DESAFIO GRID!!!  */
