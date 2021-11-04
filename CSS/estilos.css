@@ -368,7 +368,7 @@ a {
   margin-top: 100px;
   margin-bottom: 100px;
   color: black;
-  height: 45vh;
+  /* height: 45vh; */
   width: 50vw;
   background-color: #fcefee;
   border: 2px solid #edb9b9;
