@@ -26,4 +26,13 @@
   }
 }
 
-//////////////////////////////////////
+////////////NOVEDADES//////////////////////////
+
+@media (max-width: 768px) {
+   
+  .novedades-productos {
+    flex-direction: column;
+    @include novedades1;
+  }
+}
+

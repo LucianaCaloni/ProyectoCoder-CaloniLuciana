@@ -86,18 +86,36 @@
             </div>
             <!-- PROBANDO CARROUSEL DE BOOTSTRAP  -->
             <div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./imagenes/probandocarrousel1.gif" class="d-block w-100" alt="...">
+                            <img src="./imagenes/probandocarrousel1.gif" class="d-block" alt="imagen skin care">
                         </div>
                         <div class="carousel-item">
-                            <img src="./imagenes/carrrousel 2.gif" class="d-block w-100" alt="...">
+                            <img src="./imagenes/carrrousel 2.gif" class="d-block" alt="imagen skin care">
                         </div>
                         <div class="carousel-item">
-                            <img src="./imagenes/carrousel3.gif" class="d-block w-100" alt="...">
+                            <img src="./imagenes/carrousel3.gif" class="d-block" alt="imagen skin care">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -188,8 +206,8 @@
                 <div class="footer-iconos">
                     <h4 class="footer__mediosPago">Medios de pago</h4>
                     <div class="footer__mediosPago--icono"><i class="fab fa-paypal"></i><i
-                        class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
-                        class="fab fa-cc-amex"></i></i></div>
+                            class="fab fa-cc-mastercard"></i><i class="fab fa-cc-visa"></i><i
+                            class="fab fa-cc-amex"></i></i></div>
                     <h4 class="footer__redesSociales">Nuestras redes sociales</h4>
                     <div class="footer__redesSociales--icono"><i class="fab fa-facebook"></i><i
                             class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></i></div>
@@ -205,19 +223,21 @@
 
         <!-- scripts de complementos -->
 
-
+        <script src="https://kit.fontawesome.com/2352381842.js" crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
             crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/2352381842.js" crossorigin="anonymous"></script>
+
 
 
 </html>

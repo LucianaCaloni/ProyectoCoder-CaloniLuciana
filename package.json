@@ -15,5 +15,9 @@
     "url": "https://github.com/LucianaCaloni/ProyectoCoder-CaloniLuciana/issues"
   },
   "homepage": "https://github.com/LucianaCaloni/ProyectoCoder-CaloniLuciana#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {},
   "description": ""
 }
