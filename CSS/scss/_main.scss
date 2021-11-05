@@ -112,7 +112,7 @@
   flex-direction: column;
   align-items: center;
   color: #ef3b8a;
-  width: 200px;
+  width: 20rem;
   margin-left: auto;
   margin-right: auto;
   h4 {
@@ -135,5 +135,20 @@
 .novedades5 h4 {
   @include novedades1;
 }
+
+@media (max-width: 768px) {
+  .novedades-productos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #f0e889;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+    
+}
+
+
 
 

@@ -111,7 +111,6 @@ body {
   margin-right: auto;
   margin-left: 10%;
   margin-bottom: 3%;
-  /* DESAFIO ANIMACIONES */
   animation-name: tituloPrincipal;
   animation-duration: 5s;
   animation-iteration-count: infinite;
