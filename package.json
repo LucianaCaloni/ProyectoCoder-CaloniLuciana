@@ -1,5 +1,5 @@
 {
-  "name": "c",
+  "name": "sakurabeauty",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,12 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/LucianaCaloni/ProyectoCoder-CaloniLuciana.git"
   },
-  "author": "",
+  "author": "Caloni Luciana",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LucianaCaloni/ProyectoCoder-CaloniLuciana/issues"
   },
   "homepage": "https://github.com/LucianaCaloni/ProyectoCoder-CaloniLuciana#readme",
   "devDependencies": {},
-  "description": ""
+  "description": "4ta entrega proyecto coder"
 }
