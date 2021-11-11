@@ -1,102 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-body {
-  background-color: #ffffff;
-  font-family: "Simonetta", cursive;
-  color: white;
-}
-/* ----------------SECCION HEADER */
-/* MENU SUPERIOR */
-#header-encabezadoSuperior {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-}
-.buscador-provisorio {
-  display: flex;
-  justify-content: flex-end;
-  /* order: -1; */
-  padding-top: 5vh;
-  list-style: none;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-.header__menuSuperior--lista {
-  list-style: none;
-  padding-top: 5vh;
-  display: flex;
-  align-items: baseline;
-}
-.header__menuSuperior--lista a {
-  color: black;
-}
 
-.header__menuSuperior--lista a:hover {
-  color: #edb9b9;
-}
-/* BANNER */
-
-.header-encabezadoBanner img {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  width: 100vh;
-  background-color: white;
-  padding-left: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-/* MENU PRINCIPAL */
-* .header-encabezadoPrincipal {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-
-.header__navegadorPrincipal--lista {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-}
-.header__navegadorPrincipal--lista a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: black;
-  list-style: none;
-  padding: 5px 20px 5px 20px;
-  background-color: #edb9b9;
-  border-radius: 20px;
-  margin: 10px;
-  line-height: 2;
-}
-
-.header__navegadorPrincipal--lista a:hover {
-  background-color: black;
-  color: #edb9b9;
-}
-
-@media (max-width: 768px) {
-  .header__navegadorPrincipal {
-    flex-direction: column;
-  }
-  .header__navegadorPrincipal--lista {
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
-    width: 100vh;
-  }
-}
 
 /*---------------------SECCION MAIN  */
 
 /* TITULO PRINCIIPAL */
 
-.main__tituloPrincipal {
+/* .main__tituloPrincipal {
   display: flex;
   flex-direction: row;
 
@@ -125,10 +33,10 @@ body {
   100% {
     color: #ff8cb7;
   }
-}
+} */
 
 /* ----------------SECTION*/
-.main__seccionPrincipal {
+/* .main__seccionPrincipal {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,7 +78,7 @@ body {
 /* ---------SECTION CON BANNER DE MARCAS QUE SE VENDEN */
 
 /* DESAFIO GRADIENTES */
-.marcas__imagen {
+/* .marcas__imagen {
   display: flex;
   flex-basis: 100%;
   background-image: linear-gradient(to top, #ff8cb7 0%, #ffd1ff 100%),
@@ -186,11 +94,11 @@ body {
   text-align: center;
   font-size: 40px;
   color: black;
-}
+} */
 
 /* -------------------------SKIN CARE HTML */
 /* DESAFIO GRID!!!  */
-.grid {
+/* .grid {
   display: grid;
   grid-template-areas:
     "nav galeria"
@@ -228,8 +136,9 @@ h2 {
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
   margin-right: 30%;
-}
-.navegador__skinCare ul,
+} 
+/* //de esto dependia el na sup/// */
+/* .navegador__skinCare ul,
 a {
   display: flex;
   color: black;
@@ -275,10 +184,10 @@ a {
 
 .galeria__fotosZoom:hover {
   transform: scale(1.2);
-}
+} */
 
 /* Responsive Skin care */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .grid {
     grid-template-areas:
       "nav nav"
@@ -317,10 +226,10 @@ a {
     
   }
  
-}
+} */
 
 /* ------------------SECCION ENVIO INTERNACIONAL */
-.envio-internacional {
+/* .envio-internacional {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -390,9 +299,9 @@ a {
 .envio-tabla td {
   padding: 2rem;
   border: white 2px solid;
-}
+} */
 /* --------------------SECCION CONTACTO */
-.contacto {
+/* .contacto {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -422,7 +331,7 @@ a {
   margin-bottom: 100px;
   color: black;
   /* height: 45vh; */
-  width: 50vw;
+  /* width: 50vw;
   background-color: #fcefee;
   border: 2px solid #edb9b9;
   border-radius: 20px;
@@ -433,11 +342,11 @@ a {
   color: #ef3b8a;
   border: solid white 3px;
   /* DESAFIO TRANSICIONES */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}  */
 
 /* ------------------LOGIN-------- */
-.formulario-login {
+/* .formulario-login {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -465,12 +374,12 @@ a {
   color: #ef3b8a;
   border: solid white 3px;
   /* DESAFIO TRANSICIONES */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}  */
 
 /* -----------------------------CONSEJOS */
 /* CONSEJOS TIPO DE PIEL */
-.consejos-titulos {
+/* .consejos-titulos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -530,7 +439,7 @@ a {
 .tipo-piel__pielGrasa img {
   width: 30rem;
   /* height: 312.92px; */
-  border-radius: 2rem;
+  /* border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tipo-piel__pielGrasa img:hover {
@@ -588,7 +497,7 @@ a {
 .tipo-piel__pielSeca img {
   width: 26.5rem;
   /* height: 312.92px; */
-  border-radius: 2rem;
+  /* border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tipo-piel__pielSeca img:hover {
@@ -661,16 +570,14 @@ a {
   background-color: #8190ed7d;
 }
 /* responsive */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .tipo-piel{
     grid-template-columns: 1fr;
   }
   .rutina-consejos{
     grid-template-columns: 1fr;
-  }
-  
-}
-
+  } 
+    */
 
 /* SALE//////////////////////////////////////////////////// */
 /* DESAFIO BOOSTRAPS Y RESPONSIVE EN EL HTML DE SALE*/
