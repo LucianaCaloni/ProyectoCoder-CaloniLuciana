@@ -1228,6 +1228,10 @@ a {
   margin: 2rem;
 }
 
+.formulario-login fieldset label {
+  padding: 1rem;
+}
+
 .consejos-titulos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1635,6 +1639,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.page-link {
+  color: #ef3b8a;
 }
 
 .accordion-item {

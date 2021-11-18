@@ -586,6 +586,9 @@ a {
   border: solid white 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 2rem;
+  label{
+    padding: 1rem;
+  }
 }
 /////////////CONSEJOS.HTML///////////////////////////////////
 .consejos-titulos {
@@ -858,6 +861,9 @@ a {
 .pagination {
   display: flex;
   justify-content: center;
+}
+.page-link{
+  color: $secundario;
 }
 /////////////PREGUNTAS FRECUENTES.HTML////////////////////////////////////////////////////
 .accordion-item {
